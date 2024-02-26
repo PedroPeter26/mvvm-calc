@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">mvvm-calc</string>
+    <string-array name="operaciones_array">
+        <item>Sumar</item>
+        <item>Restar</item>
+        <item>Multiplicar</item>
+        <item>Dividir</item>
+    </string-array>
+</resources>

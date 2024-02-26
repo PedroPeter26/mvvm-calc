@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".View.MainActivity"
+    android:background="@drawable/gradiente1">
+
+    <EditText
+        android:id="@+id/editTextNum1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="36dp"
+        android:hint="Número 1"
+        android:inputType="numberDecimal"
+        android:layout_centerHorizontal="true"
+        android:textSize="38dp"/>
+
+    <EditText
+        android:id="@+id/editTextNum2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNum1"
+        android:layout_alignStart="@+id/editTextNum1"
+        android:layout_marginTop="16dp"
+        android:hint="Número 2"
+        android:inputType="numberDecimal"
+        android:textSize="38dp"
+        />
+
+    <Spinner
+        android:id="@+id/spinnerOperacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextNum2"
+        android:layout_marginTop="50dp"
+        android:layout_alignStart="@+id/editTextNum2"
+        />
+
+    <EditText
+        android:id="@+id/editTextResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spinnerOperacion"
+        android:layout_alignStart="@+id/spinnerOperacion"
+        android:layout_marginTop="50dp"
+        android:hint="Resultado"
+        android:inputType="numberDecimal"
+        android:enabled="false"
+        android:textSize="38dp"/>
+
+    <Button
+        android:id="@+id/buttonCalcular"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextResultado"
+        android:layout_alignStart="@+id/editTextResultado"
+        android:layout_marginTop="16dp"
+        android:text="Calcular"
+        android:textSize="38dp"/>
+
+</RelativeLayout>
